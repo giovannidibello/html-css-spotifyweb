@@ -20,65 +20,79 @@
     <!-- contenitore parte principare -->
     <div id="wrapper">
 
-        <!-- barra laterale sinistra -->
-        <nav id="sidebar">
+        <!-- container barra laterale -->
+        <div id="container-side">
 
-            <!-- parte pulsanti -->
-            <div>
-                <img id="logo" src="./img/logo.svg" alt="Logo Spotify">
-                <img id="logo-small" src="./img/logo-small.svg" alt="Logo Spotify Piccolo">
+            <!-- barra laterale sinistra -->
+            <nav id="sidebar">
+
+                <!-- parte pulsanti -->
+                <div id="button-cont">
+                    <div>
+                        <img id="logo" src="./img/logo.svg" alt="Logo Spotify">
+                        <img id="logo-small" src="./img/logo-small.svg" alt="Logo Spotify Piccolo">
+                    </div>
+                    <div class="side-button">
+                        <div>
+                            <a href="http://#"><img src="./img/home.svg" alt="Home"><span class="disappear">
+                                    Home</span></a>
+                        </div>
+                        <div>
+                            <a href="http://#"><img src="./img/search.svg" alt="Cerca"></i><span class="disappear">
+                                    Cerca</span></a>
+                        </div>
+                        <div>
+                            <a href="http://#"><img src="./img/libreria.svg" alt="Libreria"><span class="disappear"> La
+                                    tua
+                                    libreria</span></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- parte playlist -->
+                <div id="playlist" class="disappear">
+                    <h4>PLAYLIST</h4>
+                    <div>
+                        <a href="http://#"><i class="fa-solid fa-square-plus"></i> Crea Playlist</a>
+                    </div>
+                    <div>
+                        <a href="http://#">Nome Playlist</a>
+                    </div>
+                    <div>
+                        <a href="http://#">Nome Playlist</a>
+                    </div>
+                    <div>
+                        <a href="http://#">Nome Playlist</a>
+                    </div>
+                    <div>
+                        <a href="http://#">Nome Playlist</a>
+                    </div>
+                    <div>
+                        <a href="http://#">Nome Playlist</a>
+                    </div>
+                    <div>
+                        <a href="http://#">Nome Playlist</a>
+                    </div>
+                    <div>
+                        <a href="http://#">Nome Playlist</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- parte profilo -->
+            <div id="profile">
+                <div>
+                    <a href="http://#"><img src="./img/download.svg" alt="Download"></i><span class="disappear">
+                            Installa app</span></a>
+                </div>
+                <div>
+                    <a href="http://#"><img src="./img/profile.svg" alt="Download"></i><span class="disappear">
+                            John Doe</span></a>
+                </div>
             </div>
-            <div class="side-button">
-                <div>
-                    <a href="http://#"><img src="./img/home.svg" alt="Home"><span class="disappear"> Home</span></a>
-                </div>
-                <div>
-                    <a href="http://#"><img src="./img/search.svg" alt="Cerca"></i><span class="disappear">
-                            Cerca</span></a>
-                </div>
-                <div>
-                    <a href="http://#"><img src="./img/libreria.svg" alt="Libreria"><span class="disappear"> La tua
-                            libreria</span></a>
-                </div>
-            </div>
+        </div>
 
-            <!-- parte playlist -->
-            <div class="disappear">
-                <h4>PLAYLIST</h4>
-                <div>
-                    <a href="http://#"><i class="fa-solid fa-square-plus"></i> Crea Playlist</a>
-                </div>
-                <div>
-                    <a href="http://#">Nome Playlist</a>
-                </div>
-                <div>
-                    <a href="http://#">Nome Playlist</a>
-                </div>
-                <div>
-                    <a href="http://#">Nome Playlist</a>
-                </div>
-                <div>
-                    <a href="http://#">Nome Playlist</a>
-                </div>
-                <div>
-                    <a href="http://#">Nome Playlist</a>
-                </div>
-                <div>
-                    <a href="http://#">Nome Playlist</a>
-                </div>
-                <div>
-                    <a href="http://#">Nome Playlist</a>
-                </div>
-
-
-
-
-            </div>
-
-
-
-
-        </nav>
 
         <!-- contenuto parte principale -->
         <main>
@@ -154,7 +168,7 @@
                 <div class="album">
                     <img src="./img/mixdaily.jpeg" alt="Album Daily Mix 1">
                     <h4>Daily Mix 1</h4>
-                </div>                
+                </div>
             </section>
 
             <!-- artisti popolari -->
@@ -169,7 +183,7 @@
                 <div class="album">
                     <img class="img-circle" src="./img/einaudi.jpeg" alt="Album Ludovico Einaudi">
                     <h4>Ludovico Einaudi</h4>
-                </div>                
+                </div>
             </section>
 
 

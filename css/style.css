@@ -33,24 +33,32 @@ h5 {
 #wrapper {
     display: flex;
     height: calc(100vh - 100px);
-    /* DEBUG */
-    /* background-color: blue; */
-
 }
 
-/* barra laterale */
+/* BARRA LATERALE */
 
-#sidebar {
-    width: 180px;
-    height: 100%;
+#container-side {
     background-color: #000000;
     color: #a3a3a3;
+    height: calc(100vh - 100px)
+}
+
+#sidebar {
+    width: 180px;    
     font-size: 12px;
-    padding: 15px;
+    padding-top: 15px;
+    padding: 0 15px;
 }
 
 #sidebar img {
-    height: 35px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* parte pulsanti */
+
+#button-cont {
+    height: 190px;
 }
 
 #logo-small {
@@ -61,19 +69,49 @@ h5 {
     padding: 15px 0;
 }
 
-.side-button div {
+.side-button a {
+    display: flex;
+    align-items: center;
     padding: 5px 0;
+}
+
+.side-button,
+.disappear {
+    font-size: 14px;
 }
 
 #sidebar i {
     font-size: 20px;
 }
 
-.disappear div {
-    padding: 5px 0;
+/* parte playlist */
+
+#playlist {
+    height: calc(100vh - 340px);
+    overflow: auto;
 }
 
-/* parte principale */
+/* parte profilo */
+
+#profile {
+    height: 50px;
+    padding: 0 15px;
+}
+
+#profile img {
+    height: 20px;
+}
+
+#profile a {
+    display: flex;
+    align-items: center;
+}
+
+#profile div {
+    border-bottom: 0.5px solid #a3a3a3;
+}
+
+/* PARTE PRINCIPALE */
 
 main {
     width: calc(100% - 180px);
@@ -187,8 +225,8 @@ main {
 
     /* parte album */
 
-    .container-album {        
-        justify-content: start;        
+    .container-album {
+        justify-content: start;
     }
 
     .album {
@@ -211,10 +249,10 @@ main {
         text-align: center;
     }
 
-    /* parte album */    
+    /* parte album */
 
-    .container-album {        
-        justify-content: space-between;        
+    .container-album {
+        justify-content: space-between;
     }
 
     .album {
