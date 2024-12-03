@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 /* WRAPPER */
 
@@ -21,9 +29,38 @@
     width: 180px;
     height: 100%;
     background-color: #000000;
-    /* DEBUG */
-    
+    color: #a3a3a3;
+    font-size: 12px;
+    padding: 15px;
 }
+
+#sidebar img {
+    height: 35px;
+}
+
+#logo-small {
+    display: none;
+}
+
+.side-button {
+    padding: 15px 0;
+}
+
+.side-button div {
+    padding: 5px 0;
+}
+
+#sidebar i {
+    font-size: 20px;
+}
+
+.disappear div {
+    padding: 5px 0;
+}
+
+
+
+
 
 /* parte principale */
 
@@ -52,4 +89,44 @@ main {
 #player {
     height: 100px;
     background-color: #282828;
+}
+
+
+
+
+
+
+
+/*************************************************
+    XS VERSION 468 px
+ *************************************************/
+
+@media screen and (max-width:468px) {
+
+
+    /* barra laterale */
+
+    #sidebar {
+        width: 50px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-small {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .disappear {
+        display: none;
+    }
+
+    /* parte principale */
+
+    main {
+        width: calc(100% - 50px);     
+    }
+
 }
