@@ -44,7 +44,7 @@ h5 {
 }
 
 #sidebar {
-    width: 180px;    
+    width: 180px;
     font-size: 12px;
     padding-top: 15px;
     padding: 0 15px;
@@ -275,6 +275,18 @@ main {
 
     #sidebar {
         width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sidebar img {
+        margin-right: 0;
+    }
+
+    #button-cont {
+        display: flex;
+        flex-direction: column;
     }
 
     #logo {
@@ -286,8 +298,38 @@ main {
         text-align: center;
     }
 
+    /* parte pulsanti */
+
+    .side-button div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .side-button img,
+    #profile img {
+        height: 24px;
+    }
+
     .disappear {
         display: none;
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: auto;
+        padding: 15px 0;
+    }
+
+    #profile div {
+        display: flex;
+        flex-direction: column;        
+        align-items: center;        
+        padding: 2px 0;        
+        border-bottom: none;        
     }
 
     /* parte principale */
