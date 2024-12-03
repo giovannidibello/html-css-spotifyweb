@@ -3,3 +3,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* WRAPPER */
+
+#wrapper {
+    display: flex;
+    height: calc(100vh - 100px);
+    /* DEBUG */
+    /* background-color: blue; */
+
+}
+
+/* barra laterale */
+
+#sidebar {
+    width: 180px;
+    height: 100%;
+    background-color: #000000;
+    /* DEBUG */
+    
+}
+
+/* parte principale */
+
+main {
+    width: calc(100% - 180px);
+    height: 100%;
+    /* DEBUG */
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PLAYER */
+
+#player {
+    height: 100px;
+    background-color: #282828;
+}
