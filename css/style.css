@@ -194,6 +194,21 @@ main {
     margin-bottom: 30px;
 }
 
+.img-album {
+    position: relative;
+}
+
+.album i {
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Corregge il posizionamento */
+    font-size: 50px; /* Dimensione dell'icona */
+    color: white; /* Colore dell'icona */
+    opacity: 0; /* Nasconde l'icona inizialmente */
+    transition: opacity 0.3s ease;
+}
+
 
 .img-circle {
     border: 5px solid #141922;
@@ -234,6 +249,10 @@ main {
 
 #miniature img {
     height: 40px;
+}
+
+#miniature i {
+    color: #878787;
 }
 
 h6 {
@@ -291,6 +310,18 @@ h6 {
     font-size: 12px;
 }
 
+/* HOVER */
+
+#container-side a:hover, #main-nav a:hover, #player i:hover {
+    color: white;
+}
+
+/* parte principale */
+
+.img-album:hover i {
+    opacity: 1; 
+    cursor: pointer;
+}
 
 
 /*************************************************
