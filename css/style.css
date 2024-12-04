@@ -104,7 +104,7 @@ h5 {
 }
 
 #profile img {
-    height: 25px;    
+    height: 25px;
 }
 
 #profile-line img {
@@ -114,13 +114,13 @@ h5 {
 #profile-pic img {
     background-color: #808080;
     color: white;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 #profile a {
     display: flex;
     align-items: center;
-    
+
 }
 
 /* PARTE PRINCIPALE */
@@ -147,6 +147,7 @@ main {
     height: 75px;
     padding: 15px 10px;
     background-color: rgba(8, 11, 18, 0.7);
+    z-index: 800;
 }
 
 #upgrade #button {
@@ -199,13 +200,17 @@ main {
 }
 
 .album i {
-    position: absolute; 
-    top: 50%; 
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Corregge il posizionamento */
-    font-size: 50px; /* Dimensione dell'icona */
-    color: white; /* Colore dell'icona */
-    opacity: 0; /* Nasconde l'icona inizialmente */
+    transform: translate(-50%, -50%);
+    /* Corregge il posizionamento */
+    font-size: 50px;
+    /* Dimensione dell'icona */
+    color: white;
+    /* Colore dell'icona */
+    opacity: 0;
+    /* Nasconde l'icona inizialmente */
     transition: opacity 0.3s ease;
 }
 
@@ -276,6 +281,10 @@ h6 {
     font-size: 12px;
 }
 
+#play i {
+    font-size: 25px;
+}
+
 
 .timeline {
     display: inline-block;
@@ -291,6 +300,7 @@ h6 {
     width: 20%;
     background-color: #c1c1c1;
     border-radius: 50px;
+    position: relative;
 }
 
 
@@ -310,17 +320,60 @@ h6 {
     font-size: 12px;
 }
 
-/* HOVER */
+/* PSEUDO SELETTORI EFFETTI */
 
-#container-side a:hover, #main-nav a:hover, #player i:hover {
+/* hover */
+
+#container-side a:hover,
+#main-nav a:hover,
+#player i:hover {
     color: white;
 }
 
-/* parte principale */
-
 .img-album:hover i {
-    opacity: 1; 
+    opacity: 1;
     cursor: pointer;
+}
+
+.img-album:hover img {
+    opacity: 0.4;
+}
+
+#upgrade #button:hover {
+    transform: scale(1.1); 
+}
+
+.time-prog:hover {
+    background-color: #adff2f;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.time-prog:hover::after {
+    content: '';
+    position: absolute;
+    right: -5px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; 
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#controller #play:hover i {
+    transform: scale(1.1);
+}
+
+/* active */
+
+#container-side a:active {
+    border-left: 2px solid #adff2f;
+}
+
+#main-nav a:active {
+    border-bottom: 2px solid #adff2f;
+    border-width: calc(50% - 30px);
 }
 
 
