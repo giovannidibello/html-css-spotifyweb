@@ -59,6 +59,7 @@ h5 {
 
 #button-cont {
     height: 190px;
+    margin-top: 10px;
 }
 
 #logo-small {
@@ -87,7 +88,7 @@ h5 {
 /* parte playlist */
 
 #playlist {
-    height: calc(100vh - 340px);
+    height: calc(100vh - 350px);
     overflow: auto;
 }
 
@@ -98,17 +99,28 @@ h5 {
     padding: 0 15px;
 }
 
+#profile-line {
+    border-bottom: 0.5px solid #a3a3a3;
+}
+
 #profile img {
-    height: 20px;
+    height: 25px;    
+}
+
+#profile-line img {
+    height: 13px;
+}
+
+#profile-pic img {
+    background-color: #808080;
+    color: white;
+    border-radius: 10px;    
 }
 
 #profile a {
     display: flex;
     align-items: center;
-}
-
-#profile div {
-    border-bottom: 0.5px solid #a3a3a3;
+    
 }
 
 /* PARTE PRINCIPALE */
@@ -278,8 +290,6 @@ h6 {
 #volume i {
     font-size: 12px;
 }
-
-
 
 
 
