@@ -58,7 +58,7 @@ h5 {
 /* parte pulsanti */
 
 #button-cont {
-    height: 190px;
+    height: 160px;
     margin-top: 10px;
 }
 
@@ -70,7 +70,7 @@ h5 {
     padding: 15px 0;
 }
 
-.side-button a {
+#side-button a {
     display: flex;
     align-items: center;
     padding: 5px 0;
@@ -88,8 +88,16 @@ h5 {
 /* parte playlist */
 
 #playlist {
-    height: calc(100vh - 350px);
+    height: calc(100vh - 335px);
     overflow: auto;
+}
+
+#playlist div {
+    margin-bottom: 10px;
+}
+
+#playlist i {
+    font-size: 30px;
 }
 
 /* parte profilo */
@@ -98,6 +106,13 @@ h5 {
     height: 50px;
     padding: 0 15px;
 }
+
+#profile a {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
 
 #profile-line {
     border-bottom: 0.5px solid #a3a3a3;
@@ -156,6 +171,7 @@ main {
     padding: 10px 20px;
     border: 1px solid white;
     border-radius: 15px;
+    margin-right: 18px;
 }
 
 /* parte nav */
@@ -340,7 +356,7 @@ h6 {
 }
 
 #upgrade #button:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .time-prog:hover {
@@ -352,10 +368,10 @@ h6 {
 .time-prog:hover::after {
     content: '';
     position: absolute;
-    right: -5px; 
+    right: -5px;
     top: 50%;
     transform: translateY(-50%);
-    width: 10px; 
+    width: 10px;
     height: 10px;
     background-color: white;
     border-radius: 50%;
@@ -367,7 +383,7 @@ h6 {
 
 /* active */
 
-#container-side a:active {
+#button-cont a:active {
     border-left: 2px solid #adff2f;
 }
 
@@ -426,97 +442,6 @@ h6 {
         width: 47%;
         text-align: center;
     }
-}
-
-
-
-
-/*************************************************
-    XS VERSION 468 px
- *************************************************/
-
-@media screen and (max-width:468px) {
-
-
-    /* barra laterale */
-
-    #sidebar {
-        width: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #sidebar img {
-        margin-right: 0;
-    }
-
-    #button-cont {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #logo {
-        display: none;
-    }
-
-    #logo-small {
-        display: inline-block;
-        text-align: center;
-    }
-
-    /* parte pulsanti */
-
-    .side-button div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    .side-button img,
-    #profile img {
-        height: 24px;
-    }
-
-    .disappear {
-        display: none;
-    }
-
-    #profile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: auto;
-        padding: 15px 0;
-    }
-
-    #profile div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2px 0;
-        border-bottom: none;
-    }
-
-    /* parte principale */
-
-    main {
-        width: calc(100% - 50px);
-    }
-
-    /* parte banner */
-
-    #upgrade {
-        width: calc(100% - 50px);
-    }
-
-    /* parte nav */
-
-    #main-nav div {
-        width: 20%;
-        text-align: center;
-    }
 
     /* PLAYER */
 
@@ -568,5 +493,95 @@ h6 {
     #volume span {
         gap: 5px;
     }
+}
+
+
+
+
+/*************************************************
+    XS VERSION 468 px
+ *************************************************/
+
+@media screen and (max-width:468px) {
+
+
+    /* barra laterale */
+
+    #sidebar {
+        width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sidebar img {
+        margin-right: 0;
+    }
+
+    #button-cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo-small {
+        display: inline-block;
+        text-align: center;
+    }
+
+    /* parte pulsanti */
+
+    .side-button div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .side-button img {
+        height: 24px;
+    }
+
+    .disappear {
+        display: none;
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: auto;
+        padding: 15px 0;
+    }
+
+    #profile div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2px 0;
+        border-bottom: none;
+    }
+
+    /* parte principale */
+
+    main {
+        width: calc(100% - 50px);
+    }
+
+    /* parte banner */
+
+    #upgrade {
+        width: calc(100% - 50px);
+    }
+
+    /* parte nav */
+
+    #main-nav div {
+        width: 20%;
+        text-align: center;
+    }   
 
 }
