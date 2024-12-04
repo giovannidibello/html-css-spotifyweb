@@ -188,27 +188,100 @@ main {
     border-radius: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PLAYER */
 
 #player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
     background-color: #282828;
+    color: white;
+    padding: 10px;
 }
+
+#miniature,
+#volume {
+    width: 20%;
+}
+
+#miniature i,
+#volume i {
+    padding: 0 10px;
+}
+
+/* parte sinistra */
+
+#miniature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#miniature img {
+    height: 40px;
+}
+
+h6 {
+    color: #7d7f84;
+}
+
+
+/* controller */
+
+#controller {
+    width: 60%;
+    text-align: center;
+}
+
+#controller i {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.controller-text {
+    font-size: 12px;
+}
+
+
+.timeline {
+    display: inline-block;
+    height: 4px;
+    width: 70%;
+    background-color: #5a5a5a;
+    border-radius: 50px;
+}
+
+.time-prog {
+    display: block;
+    height: 100%;
+    width: 20%;
+    background-color: #c1c1c1;
+    border-radius: 50px;
+}
+
+
+/* parte destra volume */
+
+#volume {
+    display: flex;
+    align-items: center;
+}
+
+#volume span {
+    display: flex;
+    align-items: center;
+}
+
+#volume i {
+    font-size: 12px;
+}
+
+
+
+
 
 /*************************************************
     MD VERSION 992px
@@ -326,10 +399,10 @@ main {
 
     #profile div {
         display: flex;
-        flex-direction: column;        
-        align-items: center;        
-        padding: 2px 0;        
-        border-bottom: none;        
+        flex-direction: column;
+        align-items: center;
+        padding: 2px 0;
+        border-bottom: none;
     }
 
     /* parte principale */
@@ -349,6 +422,57 @@ main {
     #main-nav div {
         width: 20%;
         text-align: center;
+    }
+
+    /* PLAYER */
+
+    #player {
+        padding: 5px;
+    }
+
+    /* parte miniature */
+
+    #miniature {
+        width: 25%;
+        gap: 5px;
+    }
+
+    #miniature img {
+        height: 30px;
+    }
+
+    #miniature div {
+        font-size: 11px;
+    }
+
+    /* controller */
+
+    #controller {
+        width: 45%;
+    }
+
+    #controller i {
+        font-size: 16px;
+    }
+
+    .timeline {
+        height: 3px;
+        width: 90%;
+    }
+
+    /* parte volume */
+
+    #volume {
+        width: 30%;
+    }
+
+    #volume i {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+
+    #volume span {
+        gap: 5px;
     }
 
 }
