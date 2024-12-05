@@ -54,10 +54,10 @@ h5 {
     padding: 0 15px;
 }
 
-/* #sidebar img {
+#sidebar img {
     height: 30px;
-    margin-right: 20px;
-} */
+    margin-right: 10px;
+}
 
 #side-button svg {
     height: 30px;
@@ -528,6 +528,10 @@ h6 {
         margin-right: 0;
     }
 
+    #side-button svg {
+        margin-right: 0;
+    }
+
     #button-cont {
         display: flex;
         flex-direction: column;
@@ -592,6 +596,6 @@ h6 {
     #main-nav div {
         width: 20%;
         text-align: center;
-    }   
+    }
 
 }
