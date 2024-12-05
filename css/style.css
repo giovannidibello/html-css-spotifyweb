@@ -22,6 +22,10 @@ h2 {
     margin-bottom: 10px;
 }
 
+h4 {
+    margin: 10px 0;
+}
+
 h5 {
     color: #7d7f84;
     margin-top: 5px;
@@ -50,9 +54,15 @@ h5 {
     padding: 0 15px;
 }
 
-#sidebar img {
+/* #sidebar img {
+    height: 30px;
+    margin-right: 20px;
+} */
+
+#side-button svg {
     height: 30px;
     margin-right: 10px;
+    fill: #a3a3a3;
 }
 
 /* parte pulsanti */
@@ -88,7 +98,7 @@ h5 {
 /* parte playlist */
 
 #playlist {
-    height: calc(100vh - 335px);
+    height: calc(100vh - 340px);
     overflow: auto;
 }
 
