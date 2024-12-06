@@ -44,7 +44,7 @@ h5 {
 #container-side {
     background-color: #000000;
     color: #a3a3a3;
-    height: calc(100vh - 100px)
+    height: calc(100vh - 100px);
 }
 
 #sidebar {
@@ -63,6 +63,15 @@ h5 {
     height: 30px;
     margin-right: 10px;
     fill: #a3a3a3;
+}
+
+.active.active-check {
+    border-left: 2px solid #adff2f;
+}
+
+.active-main.active-check {
+    border-bottom: 2px solid #adff2f;
+    width: calc(50% - 20px);
 }
 
 /* parte pulsanti */
@@ -226,17 +235,13 @@ main {
 }
 
 .album i {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Corregge il posizionamento */
     font-size: 50px;
-    /* Dimensione dell'icona */
     color: white;
-    /* Colore dell'icona */
-    opacity: 0;
-    /* Nasconde l'icona inizialmente */
     transition: opacity 0.3s ease;
 }
 
@@ -346,9 +351,7 @@ h6 {
     font-size: 12px;
 }
 
-/* PSEUDO SELETTORI EFFETTI */
-
-/* hover */
+/* HOVER */
 
 #container-side a:hover,
 #main-nav a:hover,
@@ -357,7 +360,7 @@ h6 {
 }
 
 .img-album:hover i {
-    opacity: 1;
+    display: block;
     cursor: pointer;
 }
 
@@ -389,17 +392,6 @@ h6 {
 
 #controller #play:hover i {
     transform: scale(1.1);
-}
-
-/* active */
-
-#button-cont a:active {
-    border-left: 2px solid #adff2f;
-}
-
-#main-nav a:active {
-    border-bottom: 2px solid #adff2f;
-    border-width: calc(50% - 30px);
 }
 
 
